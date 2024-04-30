@@ -9,6 +9,5 @@ function canPlaceFlowers(flowerbed: number[], n: number): boolean {
             }
         }
     }
-
     return n == 0;
 };
