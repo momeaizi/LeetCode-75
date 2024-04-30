@@ -1,12 +1,5 @@
 class Solution {
-    int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
+
 public:
     string gcdOfStrings(string str1, string str2) {
         size_t index = 0;
