@@ -1,7 +1,8 @@
 function gcdOfStrings(str1: string, str2: string): string {
     function gcd(a: number, b: number): number {
+        let temp: number = b;
         while (b != 0) {
-            const temp: number = b;
+            temp = b;
             b = a % b;
             a = temp;
         }
