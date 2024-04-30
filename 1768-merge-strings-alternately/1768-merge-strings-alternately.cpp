@@ -11,7 +11,7 @@ public:
                 result[j++] = word2[i];
             }
         }
-
+        
         return result;
     }
 };
