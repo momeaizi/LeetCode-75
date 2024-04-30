@@ -1,4 +1,12 @@
 class Solution {
+    int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
 public:
     string gcdOfStrings(string str1, string str2) {
         size_t index = 0;
@@ -6,10 +14,7 @@ public:
         if (str1 + str2 != str2 + str1)
             return "";
 
-        for (size_t i = 0; i < min(str1.length(), str2.length()); ++i) {
-            if (str1.length() % (i + 1) == 0 && str2.length() % (i + 1) == 0)
-                index = i + 1;
-        }
+        index = gcd(str1.length(), str2.length());
 
         return str1.substr(0, index);;
     }
