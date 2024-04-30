@@ -9,6 +9,5 @@ function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
             result[i] = false;
         }
     }
-
     return result;
 };
