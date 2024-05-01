@@ -7,7 +7,6 @@ function reverseVowels(s: string): string {
         while (start < end && 'aeiouAEIOU'.includes(s[start]) == false) ++start;
         while (start < end && 'aeiouAEIOU'.includes(s[end]) == false) --end;
 
-
         str[start] = s[end];
         str[end--] = s[start++];
     }
